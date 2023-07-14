@@ -1,13 +1,17 @@
 function validarRespuestaUno(){
-    let opcion1 =document.getElementById("opcion1");
-    if(opcion1.cheched){
+    let opcion1 = document.getElementById("opcion1");
+    let nextBtn = document.getElementById("next-btn");
+
+    if(opcion1.checked){
         alert("Respuesta correcta");
-        let = document.getElementById();
+        nextBtn.disabled = false;
     }else{
         alert("Respuesta incorrecta");
-    }
+    }  
 }
-function validarRespuestaUno(){
+
+
+function validarRespuestaDos(){
     let opcion1 =document.getElementById("opcion2");
     if(opcion1.cheched){
         alert("Respuesta correcta");
