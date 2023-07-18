@@ -4,327 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <main>
-        <h1>QUIERO SER MILLONARIO</h1>
-            <div id="pregunta1">
-              <p id="pregunta1">¿Cuál es el río más largo del mundo?</p>
-                <input type="radio" name="respuesta1" id="respuesta1A value="A" onchange="validarRespuesta()">
-                <label for="respuesta1A">a)Amazonas</label>
-                <div class="opcion">
-             </div>
-             <div class="opcion">
-                <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-                <label for="respuesta1A">b)Nilo</label>
-              </div>
-              <div class="opcion">
-                <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-                <label for="respuesta1A">c)Misisipi</label>
-              </div>
-              <div class="opcion">
-                <input type="radio" name="answare" id="opcion4" >
-                <label for="opcion4">d)Yangtsé</label>
-              </div>
-            </div>
-            <div class="result hidden" id="result"></div>
-           </div>
-          <button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-          <button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-        </div>
-
-        <div class="contenedor">
-          <div class="question">
-            <p id="pregunta2"> 
-              ¿Cuál es la capital de Australia?
-            </p>
-            <div class="opciones">
-              <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-              <label for="opcion1">a)Sídney</label>
-              <div class="opcion">
-           </div>
-           <div class="opcion">
-              <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-              <label for="opcion2">b)Canberra</label>
-            </div>
-            <div class="opcion">
-              <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-              <label for="opcion3">c)Melbourne</label>
-            </div>
-            <div class="opcion">
-             <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-              <label for="opcion4">d)risbane</label>
-             </div>
-            </div>
-           <div class="result hidden" id="result"></div>
-           </div>
-         <button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-         <button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-       </div>
-
-      <div class="contenedor">
-        <div class="question">
-          <p id="pregunta3"> 
-            ¿Cuál es el elemento químico más abundante en el universo?
-          </p>
-          <div class="opciones">
-            <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-            <label for="opcion1">a)Hidrógeno</label>
-            <div class="opcion">
-         </div>
-         <div class="opcion">
-            <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-            <label for="opcion2">b)Oxígeno</label>
-          </div>
-          <div class="opcion">
-            <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-            <label for="opcion3">c)Oxígeno</label>
-          </div>
-          <div class="opcion">
-            <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-            <label for="opcion4">d)Helio</label>
-           </div>
-           </div>
-           <div class="result hidden" id="result"></div>
-         </div>
-       <button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-       <button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-    </div>
-
-    <div class="contenedor">
-      <div class="question">
-        <p id="pregunta4"> 
-          ¿Cuál es el país más poblado del mundo?
-        </p>
-        <div class="opciones">
-          <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-          <label for="opcion1">a)China</label>
-          <div class="opcion">
-       </div>
-       <div class="opcion">
-          <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-          <label for="opcion2">b)India</label>
-        </div>
-        <div class="opcion">
-          <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-          <label for="opcion3">c)Estados Unidos</label>
-        </div>
-        <div class="opcion">
-          <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-          <label for="opcion4">d)Brasil</label>
-         </div>
-        </div>
-        <div class="result hidden" id="result"></div>
-       </div>
-       <button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-       <button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-     </div>
-
-   <div class="contenedor">
-    <div class="question">
-      <p id="pregunta5"> 
-        ¿Cuál es el autor de "1984"?
-      </p>
-      <div class="opciones">
-        <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-        <label for="opcion1">a)George Orwell</label>
-        <div class="opcion">
-     </div>
-     <div class="opcion">
-        <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-        <label for="opcion2">b)Aldous Huxley</label>
-      </div>
-      <div class="opcion">
-        <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-        <label for="opcion3">c)Ray Bradbury</label>
-      </div>
-      <div class="opcion">
-        <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-        <label for="opcion4">d)J.R.R. Tolkien</label>
-      </div>
-    </div>
-    <div class="result hidden" id="result"></div>
-   </div>
-   <button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-   <button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-</div>
-
-<div class="contenedor">
-  <div class="question">
-    <p id="pregunta6"> 
-      ¿Cuál es el océano más grande del mundo?
-    </p>
-    <div class="opciones">
-      <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-      <label for="opcion1">a)Atlántico</label>
-      <div class="opcion">
-   </div>
-   <div class="opcion">
-      <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()"> 
-      <label for="opcion2">b)Índico</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-      <label for="opcion3">c)Pacífico</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-      <label for="opcion4">d)Ártico</label>
-     </div>
-     </div>
-      <div class="result hidden" id="result"></div>
-     </div>
-     <button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-     <button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
- </div>
-
-<div class="contenedor">
-  <div class="question">
-    <p id="pregunta7"> 
-      ¿Cuál es el animal terrestre más rápido del mundo?
-    </p>
-    <div class="opciones">
-      <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-      <label for="opcion1">a)Leopardo</label>
-      <div class="opcion">
-   </div>
-   <div class="opcion">
-      <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-      <label for="opcion2">b) Guepardo</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-      <label for="opcion3">c)León</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-      <label for="opcion4">d)Elefante</label>
-     </div>
-     </div>
-     <div class="result hidden" id="result"></div>
-    </div>
-   <button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-   <button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-</div>
-
-<div class="contenedor">
-  <div class="question">
-    <p id="pregunta8"> 
-      ¿Cuál es el planeta más grande del sistema solar?
-    </p>
-    <div class="opciones">
-      <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-      <label for="opcion1">a)Marte</label>
-      <div class="opcion">
-   </div>
-   <div class="opcion">
-      <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-      <label for="opcion2">b)Jupiter</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-      <label for="opcion3">c)Neptuno</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-      <label for="opcion4">d)Venus</label>
-    </div>
+  <h1>QUIERO SER MILLONARIO</h1>
+  <div id="pregunta1">
+    <h3 id="preguntaUno">¿Cuál es el río más largo del mundo?</h3>
+    <input type="radio" name="respuesta1" id="respuestaA" value="A">
+    <label for="respuestaA">A) Amazonas</label>
+    <br>
+    <input type="radio" name="respuesta1" id="respuestaB" value="B">
+    <label for="respuestaB">B) Nilo</label>
+    <br>
+    <input type="radio" name="respuesta1" id="respuestaC" value="C">
+    <label for="respuestaC">C) Misisipi</label>
+    <br>
+    <input type="radio" name="respuesta1" id="respuestaD" value="D">
+    <label for="respuestaD">D) Yangtsé</label>
+    <br>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+  </div> 
+  <div id="pregunta2" style="display: none;">
+    <h3 id="preguntaDos">¿Cuál es la capital de Australia?</h3>
+    <input type="radio" name="respuesta2" id="respuestaA" value="A">
+    <label for="respuestaA">A) Sídney</label>
+    <br>
+    <input type="radio" name="respuesta2" id="respuestaB" value="B">
+    <label for="respuestaB">B) Canberra</label>
+    <br>
+    <input type="radio" name="respuesta2" id="respuestaC" value="C">
+    <label for="respuestaC">C) Melbourne</label>
+    <br>
+    <input type="radio" name="respuesta2" id="respuestaD" value="D">
+    <label for="respuestaD">D) Brisbane</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
   </div>
-  <div class="result hidden" id="result"></div>
- </div>
-<button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-<button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-</div>
-
-<div class="contenedor">
-  <div class="question">
-    <p id="pregunta9"> 
-      ¿Cuál es la montaña más alta del mundo?
-    </p>
-    <div class="opciones">
-      <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-      <label for="opcion1">a)Kilimanjaro</label>
-      <div class="opcion">
-   </div>
-   <div class="opcion">
-      <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-      <label for="opcion2">b)Mont Blanc</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-      <label for="opcion3">c)Everest</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-      <label for="opcion4">d)Aconcagua</label>
-    </div>
+  <div id="pregunta3" style="display: none;">
+    <h3 id="preguntaTres">¿Cuál es la capital de Francia?</h3>
+    <input type="radio" name="respuesta3" id="respuestaA" value="A">
+    <label for="respuestaA">A) París</label>
+    <br>
+    <input type="radio" name="respuesta3" id="respuestaB" value="B">
+    <label for="respuestaB">B) Londres</label>
+    <br>
+    <input type="radio" name="respuesta3" id="respuestaC" value="C">
+    <label for="respuestaC">C) Madrid</label>
+    <br>
+    <input type="radio" name="respuesta3" id="respuestaD" value="D">
+    <label for="respuestaD">D) Berlín</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
   </div>
-  <div class="result hidden" id="result"></div>
- </div>
-<button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-<button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-</div>
-
-<div class="contenedor">
-  <div class="question">
-    <p id="pregunta10"> 
-      ¿Cuál es la capital de España?
-    </p>
-    <div class="opciones">
-      <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-      <label for="opcion1">a)Madrid</label>
-      <div class="opcion">
-   </div>
-   <div class="opcion">
-      <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-      <label for="opcion2">b)Barcelona</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-      <label for="opcion3">c)Valencia</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-      <label for="opcion4">d)Sevilla</label>
-    </div>
+  <div id="pregunta4" style="display: none;">
+    <h3 id="preguntaCuatro">¿Cuál es el elemento químico más abundante en el universo?</h3>
+    <input type="radio" name="respuesta4" id="respuestaA" value="A">
+    <label for="respuestaA">A) Hidrógeno</label>
+    <br>
+    <input type="radio" name="respuesta4" id="respuestaB" value="B">
+    <label for="respuestaB">B) Oxígeno</label>
+    <br>
+    <input type="radio" name="respuesta4" id="respuestaC" value="C">
+    <label for="respuestaC">C) Helio</label>
+    <br>
+    <input type="radio" name="respuesta4" id="respuestaD" value="D">
+    <label for="respuestaD">D) Carbono</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
   </div>
-  <div class="result hidden" id="result"></div>
- </div>
-<button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-<button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-</div>
-
-<div class="contenedor">
-  <div class="question">
-    <p id="pregunta11"> 
-      ¿Cuál es el pintor famoso que creó la obra "La noche estrellada"?
-    </p>
-    <div class="opciones">
-      <input type="radio" name="answare" id="opcion1" value="a" onchange="validarRespuesta()">
-      <label for="opcion1">a)Leonardo da Vinci</label>
-      <div class="opcion">
-   </div>
-   <div class="opcion">
-      <input type="radio" name="answare" id="opcion2" value="b" onchange="validarRespuesta()">
-      <label for="opcion2">b)Vincent van Gogh</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion3" value="c" onchange="validarRespuesta()">
-      <label for="opcion3">c)Pablo Picasso</label>
-    </div>
-    <div class="opcion">
-      <input type="radio" name="answare" id="opcion4" value="d" onchange="validarRespuesta()">
-      <label for="opcion4">d)Claude Monet</label>
-    </div>
+  <div id="pregunta5" style="display: none;">
+    <h3 id="preguntaCinco">¿Cuál es el país más poblado del mundo?</h3>
+    <input type="radio" name="respuesta5" id="respuestaA" value="A">
+    <label for="respuestaA">A) China</label>
+    <br>
+    <input type="radio" name="respuesta5" id="respuestaB" value="B">
+    <label for="respuestaB">B) India</label>
+    <br>
+    <input type="radio" name="respuesta5" id="respuestaC" value="C">
+    <label for="respuestaC">C) Estados Unidos</label>
+    <br>
+    <input type="radio" name="respuesta5" id="respuestaD" value="D">
+    <label for="respuestaD">D) Brasil</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
   </div>
-  <div class="result hidden" id="result"></div>
- </div>
-<button class="btn btn-primary" id="next-btn" disabled>Siguiente</button>
-<button class="btn btn-primary" id="restart-btn" style="display: none;">Reiniciar</button>
-</div>
+  <div id="pregunta6" style="display: none;">
+    <h3 id="preguntaSeis">¿Cuál es el autor de "1984"?</h3>
+    <input type="radio" name="respuesta6" id="respuestaA" value="A">
+    <label for="respuestaA">A) George Orwell</label>
+    <br>
+    <input type="radio" name="respuesta6" id="respuestaB" value="B">
+    <label for="respuestaB">B) Aldous Huxley</label>
+    <br>
+    <input type="radio" name="respuesta6" id="respuestaC" value="C">
+    <label for="respuestaC">C) Ray Bradbury</label>
+    <br>
+    <input type="radio" name="respuesta6" id="respuestaD" value="D">
+    <label for="respuestaD">D) J.R.R. Tolkien</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+  </div>
+  <div id="pregunta7" style="display: none;">
+    <h3 id="preguntaSiete">¿Cuál es el océano más grande del mundo?</h3>
+    <input type="radio" name="respuesta7" id="respuestaA" value="A">
+    <label for="respuestaA">A) Atlántico</label>
+    <br>
+    <input type="radio" name="respuesta7" id="respuestaB" value="B">
+    <label for="respuestaB">B) Índico</label>
+    <br>
+    <input type="radio" name="respuesta7" id="respuestaC" value="C">
+    <label for="respuestaC">C) Pacífico</label>
+    <br>
+    <input type="radio" name="respuesta7" id="respuestaD" value="D">
+    <label for="respuestaD">D) Ártico</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+  </div>
+  <div id="pregunta8" style="display: none;">
+    <h3 id="preguntaOcho">¿Cuál es el animal terrestre más rápido del mundo?</h3>
+    <input type="radio" name="respuesta8" id="respuestaA" value="A">
+    <label for="respuestaA">A) Leopardo</label>
+    <br>
+    <input type="radio" name="respuesta8" id="respuestaB" value="B">
+    <label for="respuestaB">B) Guepardo</label>
+    <br>
+    <input type="radio" name="respuesta8" id="respuestaC" value="C">
+    <label for="respuestaC">C) León</label>
+    <br>
+    <input type="radio" name="respuesta8" id="respuestaD" value="D">
+    <label for="respuestaD">D) Elefante</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+  </div>
+  <div id="pregunta9" style="display: none;">
+    <h3 id="preguntaNueve">¿Cuál es el planeta más grande del sistema solar?</h3>
+    <input type="radio" name="respuesta9" id="respuestaA" value="A">
+    <label for="respuestaA">A) Marte</label>
+    <br>
+    <input type="radio" name="respuesta9" id="respuestaB" value="B">
+    <label for="respuestaB">B) Júpiter</label>
+    <br>
+    <input type="radio" name="respuesta9" id="respuestaC" value="C">
+    <label for="respuestaC">C) Neptuno</label>
+    <br>
+    <input type="radio" name="respuesta9" id="respuestaD" value="D">
+    <label for="respuestaD">D) Venus</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+  </div>
+  <div id="pregunta10" style="display: none;">
+    <h3 id="preguntaDies">¿Cuál es la montaña más alta del mundo?</h3>
+    <input type="radio" name="respuesta10" id="respuestaA" value="A">
+    <label for="respuestaA">A) Kilimanjaro</label>
+    <br>
+    <input type="radio" name="respuesta10" id="respuestaB" value="B">
+    <label for="respuestaB">B) Mont Blanc</label>
+    <br>
+    <input type="radio" name="respuesta10" id="respuestaC" value="C">
+    <label for="respuestaC">C) Everest</label>
+    <br>
+    <input type="radio" name="respuesta10" id="respuestaD" value="D">
+    <label for="respuestaD">D) Aconcagua</label>
+    <br>
+    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+  </div>
+  <script src="funcion.js"></script>
 
-    </main>
 </body>
 </html>
-
-            
+      
+  
