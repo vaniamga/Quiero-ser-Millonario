@@ -1,3 +1,40 @@
+function eliminarRespuestas(preguntaId) {
+    var pregunta = document.getElementById(preguntaId);
+    var respuestasIncorrectas = pregunta.querySelectorAll("input[type='radio'][value='B'], input[type='radio'][value='C']");
+    var respuestasAEliminar = 2;
+  
+    var posicionesAEliminar = [];
+    while (posicionesAEliminar.length < respuestasAEliminar) {
+      var posicionAleatoria = Math.floor(Math.random() * respuestasIncorrectas.length);
+      if (posicionesAEliminar.indexOf(posicionAleatoria) === -1) {
+        posicionesAEliminar.push(posicionAleatoria);
+      }
+    }
+  
+    for (var i = 0; i < posicionesAEliminar.length; i++) {
+      var posicion = posicionesAEliminar[i];
+      respuestasIncorrectas[posicion].style.display = "none";
+    }
+  }
+
+  function eliminarRespuestas2(preguntaId) {
+    var pregunta = document.getElementById(preguntaId);
+    var respuestasIncorrectas = pregunta.querySelectorAll("input[type='radio'][value='B'], input[type='radio'][value='D']");
+    var respuestasAEliminar = 2;
+  
+    var posicionesAEliminar = [];
+    while (posicionesAEliminar.length < respuestasAEliminar) {
+      var posicionAleatoria = Math.floor(Math.random() * respuestasIncorrectas.length);
+      if (posicionesAEliminar.indexOf(posicionAleatoria) === -1) {
+        posicionesAEliminar.push(posicionAleatoria);
+      }
+    }
+  
+    for (var i = 0; i < posicionesAEliminar.length; i++) {
+      var posicion = posicionesAEliminar[i];
+      respuestasIncorrectas[posicion].style.display = "none";
+    }
+  }
 function verificarRespuesta(preguntaId) {
     const pregunta = document.getElementById(preguntaId);
     const opciones = pregunta.querySelectorAll("input[type=radio]");
@@ -62,4 +99,10 @@ function verificarRespuesta(preguntaId) {
     } else {
         alert("Respuesta incorrecta. Inténtalo de nuevo.");
     }
+}
+
+function utilizarComodin(){
+    var respuesta = document.getElementById("respuestaIncorrecta1");
+    var respuestaB = document.getElementById("respuestaB");
+    respuesta.remove();
 }
