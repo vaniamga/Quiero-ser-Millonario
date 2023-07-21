@@ -26,7 +26,7 @@
     <input type="radio" name="respuesta1" id="respuestaD" value="D">
     <label for="respuestaD">D) Yangtsé</label>
     <br>
-    <button id="next-btn" type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta1')">Aceptar</button>
   </div> 
   <div id="pregunta2" style="display: none;">
     <h3 id="preguntaDos">¿Cuál es la capital de Australia?</h3>
@@ -42,23 +42,23 @@
     <input type="radio" name="respuesta2" id="respuestaD" value="D">
     <label for="respuestaD">D) Brisbane</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta2')">Aceptar</button>
   </div>
   <div id="pregunta3" style="display: none;">
-    <h3 id="preguntaTres">¿Cuál es la capital de Francia?</h3>
+    <h3 id="preguntaTres">¿Cuál es la capital de España?</h3>
     <input type="radio" name="respuesta3" id="respuestaA" value="A">
-    <label for="respuestaA">A) París</label>
+    <label for="respuestaA">A) Madrid</label>
     <br>
     <input type="radio" name="respuesta3" id="respuestaB" value="B">
-    <label for="respuestaB">B) Londres</label>
+    <label for="respuestaB">B) Barcelona</label>
     <br>
     <input type="radio" name="respuesta3" id="respuestaC" value="C">
-    <label for="respuestaC">C) Madrid</label>
+    <label for="respuestaC">C) Valencia</label>
     <br>
     <input type="radio" name="respuesta3" id="respuestaD" value="D">
-    <label for="respuestaD">D) Berlín</label>
+    <label for="respuestaD">D) Sevilla</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta3')">Aceptar</button>
   </div>
   <div id="pregunta4" style="display: none;">
     <h3 id="preguntaCuatro">¿Cuál es el elemento químico más abundante en el universo?</h3>
@@ -74,7 +74,9 @@
     <input type="radio" name="respuesta4" id="respuestaD" value="D">
     <label for="respuestaD">D) Carbono</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="comodin-btn" type="button" class="btn btn-dark" onclick="utilizarComodin()">Usar Comodín</button>
+    
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta4')">Aceptar</button>
   </div>
   <div id="pregunta5" style="display: none;">
     <h3 id="preguntaCinco">¿Cuál es el país más poblado del mundo?</h3>
@@ -90,7 +92,7 @@
     <input type="radio" name="respuesta5" id="respuestaD" value="D">
     <label for="respuestaD">D) Brasil</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta5')">Aceptar</button>
   </div>
   <div id="pregunta6" style="display: none;">
     <h3 id="preguntaSeis">¿Cuál es el autor de "1984"?</h3>
@@ -106,7 +108,7 @@
     <input type="radio" name="respuesta6" id="respuestaD" value="D">
     <label for="respuestaD">D) J.R.R. Tolkien</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta6')">Aceptar</button>
   </div>
   <div id="pregunta7" style="display: none;">
     <h3 id="preguntaSiete">¿Cuál es el océano más grande del mundo?</h3>
@@ -122,7 +124,7 @@
     <input type="radio" name="respuesta7" id="respuestaD" value="D">
     <label for="respuestaD">D) Ártico</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta7')">Aceptar</button>
   </div>
   <div id="pregunta8" style="display: none;">
     <h3 id="preguntaOcho">¿Cuál es el animal terrestre más rápido del mundo?</h3>
@@ -138,7 +140,7 @@
     <input type="radio" name="respuesta8" id="respuestaD" value="D">
     <label for="respuestaD">D) Elefante</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta8')">Aceptar</button>
   </div>
   <div id="pregunta9" style="display: none;">
     <h3 id="preguntaNueve">¿Cuál es el planeta más grande del sistema solar?</h3>
@@ -154,7 +156,7 @@
     <input type="radio" name="respuesta9" id="respuestaD" value="D">
     <label for="respuestaD">D) Venus</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta9')">Aceptar</button>
   </div>
   <div id="pregunta10" style="display: none;">
     <h3 id="preguntaDies">¿Cuál es la montaña más alta del mundo?</h3>
@@ -170,7 +172,7 @@
     <input type="radio" name="respuesta10" id="respuestaD" value="D">
     <label for="respuestaD">D) Aconcagua</label>
     <br>
-    <button type="button" class="btn btn-dark" onclick="mostrarSiguientePregunta()">Aceptar</button>
+    <button id="next-btn" type="button" class="btn btn-dark" onclick="verificarRespuesta('pregunta10')">Aceptar</button>
   </div>
   <script src="funcion.js"></script>
 
